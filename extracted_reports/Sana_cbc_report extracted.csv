@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Sana
+Age,47.0
+Sex,Female
+Trestbps (Blood Pressure),128.0
+Chol (Cholesterol),230.0
+Fbs (Fasting Blood Sugar),0.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),155.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),0.8
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),1.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,1.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),12.0
+MCH (Mean Corpuscular Hemoglobin),24.5
+MCHC (Mean Corpuscular Hemoglobin Concentration),29.5
+RDW (Red Cell Distribution Width),14.2
+RBC Count,4.6
+Pregnancies,2.0
+Glucose,150.0
+Blood Pressure,82.0
+Skin Thickness,35.0
+Insulin,150.0
+BMI,30.1
+Diabetes Pedigree Function,0.7
+Hemoglobin,12.0
+MCH,24.5
+MCHC,29.5
+MCV (Mean Corpuscular Volume),79.0

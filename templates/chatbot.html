@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Blood Donation Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+    <!-- Chat Button -->
+    <button id="chat-button">Chat with Us</button>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat with Bloodline Bot</h2>
+            <button class="close-btn">✖</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">Hello! How can I assist you today? 😊</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

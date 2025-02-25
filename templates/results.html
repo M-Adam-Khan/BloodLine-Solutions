@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Report Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🩸 Blood Report Analysis</h1>
+
+        <!-- Patient Information -->
+        <div class="alert alert-info">
+            <strong>📌 Patient Name:</strong> {{ patient_name }} <br>
+            <strong>🎂 Age:</strong> {{ patient_age }} Years <br>
+            <strong>⚧️ Gender:</strong> {{ patient_gender }} <br>
+            <strong>📅 Date of Analysis:</strong> {{ report_date }}
+        </div>
+
+        <!-- Disease Analysis Table -->
+        <table>
+            <tr>
+                <th>🦠 Disease</th>
+                <th>📊 Result</th>
+                <th>📝 Reason</th>
+                <th>🩺 Suggestion</th>
+            </tr>
+            
+            <!-- Anemia -->
+            <tr>
+                <td><strong>🩸 Anemia</strong></td>
+                <td>{{ anemia }}</td>
+                <td>
+                    {% if hemoglobin < 12.0 %}
+                        Low Hemoglobin ({{ hemoglobin }} g/dL)
+                    {% else %}
+                        Normal Hemoglobin ({{ hemoglobin }} g/dL)
+                    {% endif %}
+                </td>
+                <td>
+                    {% if anemia.startswith("Detected") %}
+                        <ul>
+                            <li>Increase iron intake (Leafy greens, Red meat, Beans, Iron supplements).</li>
+                            <li>Monitor hemoglobin levels regularly.</li>
+                            <li>Consult a doctor if symptoms like fatigue or dizziness occur.</li>
+                        </ul>
+                    {% else %}
+                        <span>✅ No Issues Found. Maintain a healthy diet rich in iron.</span>
+                    {% endif %}
+                </td>
+            </tr>
+            
+            <!-- Diabetes -->
+            <tr>
+                <td><strong>💉 Diabetes</strong></td>
+                <td>{{ diabetes }}</td>
+                <td>
+                    {% if glucose >= 126 %}
+                        High Glucose ({{ glucose }} mg/dL)
+                    {% else %}
+                        Normal Glucose ({{ glucose }} mg/dL)
+                    {% endif %}
+                </td>
+                <td>
+                    {% if diabetes.startswith("Detected") %}
+                        <ul>
+                            <li>Monitor blood sugar levels daily.</li>
+                            <li>Follow a low-carb, low-sugar diet.</li>
+                            <li>Increase physical activity (30 mins/day of walking or exercise).</li>
+                            <li>Consult a diabetologist for further evaluation.</li>
+                        </ul>
+                    {% else %}
+                        <span>✅ No Issues Found. Maintain a balanced diet and active lifestyle.</span>
+                    {% endif %}
+                </td>
+            </tr>
+
+            <!-- Thalassemia -->
+            <tr>
+                <td><strong>🧬 Thalassemia</strong></td>
+                <td>{{ thalassemia }}</td>
+                <td>
+                    {% if thalassemia.startswith("Detected") %}
+                        Low MCH & MCHC Levels Detected (Possible Thalassemia Minor)
+                    {% else %}
+                        Normal Blood Cell Levels
+                    {% endif %}
+                </td>
+                <td>
+                    {% if thalassemia.startswith("Detected") %}
+                        <ul>
+                            <li>Consider a Hemoglobin Electrophoresis Test for confirmation.</li>
+                            <li>Consult a Hematologist for genetic screening.</li>
+                            <li>Avoid unnecessary iron supplements (unless prescribed by a doctor).</li>
+                            <li>Monitor hemoglobin levels regularly.</li>
+                        </ul>
+                    {% else %}
+                        <span>✅ No Issues Found. Regular blood checkups recommended.</span>
+                    {% endif %}
+                </td>
+            </tr>
+
+            <!-- Heart Disease -->
+            <tr>
+                <td><strong>❤️ Heart Disease</strong></td>
+                <td>{{ heart_disease }}</td>
+                <td>
+                    {% if blood_pressure > 140 or cholesterol > 240 %}
+                        High BP ({{ blood_pressure }} mmHg) / High Cholesterol ({{ cholesterol }} mg/dL)
+                    {% else %}
+                        Normal BP & Cholesterol
+                    {% endif %}
+                </td>
+                <td>
+                    {% if heart_disease.startswith("Detected") %}
+                        <ul>
+                            <li>Reduce salt and saturated fat intake.</li>
+                            <li>Monitor blood pressure regularly.</li>
+                            <li>Engage in heart-healthy exercises (walking, jogging).</li>
+                            <li>Consult a cardiologist for further assessment.</li>
+                        </ul>
+                    {% else %}
+                        <span>✅ No Issues Found. Maintain a heart-healthy diet and exercise regularly.</span>
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+
+        {% if show_donor_registration %}
+        <div class="donor-section">
+            <p>🎉 You are eligible for blood donation! Help save lives by registering as a donor.</p>
+            <a href="{{ url_for('donor_registration', name=patient_name, gender=patient_gender, age=patient_age) }}" class="btn btn-primary">
+                🩸 Register as a Blood Donor
+            </a>
+        </div>
+        {% endif %}
+
+        <!-- Action Buttons -->
+        <div class="btn-container">
+            <a href="{{ url_for('home') }}" class="btn btn-primary">🏠 Return to Home</a>
+        </div>
+    </div>
+</body>
+</html>

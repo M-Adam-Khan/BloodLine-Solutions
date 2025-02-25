@@ -1,0 +1,193 @@
+/* 🌌 BLOOD-INSPIRED DARK THEME */
+body {
+    background: radial-gradient(circle at top, #250000, #000000);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* 🎬 PAGE SLIDE-UP EFFECT */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📌 MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    background: rgba(255, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 35px rgba(255, 0, 0, 0.7);
+    text-align: center;
+    animation: slideUp 1.5s ease-in-out;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+}
+
+/* 🩸 TITLE STYLING (NOW BOLDER & NEON) */
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 30px #ff0000, 0 0 50px #ff0000;
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* 🔥 NEON GLOW EFFECT */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 15px #ff0000; }
+    50% { text-shadow: 0 0 50px #ff3c3c; }
+    100% { text-shadow: 0 0 80px #ff0000; }
+}
+
+/* ℹ️ GLASSMORPHIC ALERT BOX (PATIENT INFO) */
+.alert {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 0, 0, 0.18); /* Less white, more blood-red */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+    border-left: 6px solid #ff0000;
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.alert:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(255, 0, 0, 0.8);
+}
+
+/* 📊 BLOOD REPORT TABLE */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 20px rgba(255, 0, 0, 0.6);
+}
+
+/* TABLE HEADERS */
+th {
+    background: linear-gradient(45deg, #ff0000, #b80000);
+    color: white;
+    font-size: 1.3rem;
+    padding: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* TABLE CELLS */
+td {
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+tr:hover {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+/* ALTERNATE ROW COLORS */
+tr:nth-child(even) {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+/* 📌 BUTTONS */
+.btn-container {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* 🔴 PRIMARY BUTTON */
+.btn-primary {
+    background: linear-gradient(45deg, #ff3c3c, #b80000);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ff6363, #d62828);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(255, 0, 0, 0.7);
+}
+
+/* ❌ DANGER BUTTON */
+.btn-danger {
+    background: linear-gradient(45deg, #ff0000, #8b0000);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #ff4747, #d62828);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(255, 0, 0, 0.7);
+}
+
+/* 🏥 DONOR REGISTRATION */
+.donor-section {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.2);
+    border-left: 6px solid red;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(255, 0, 0, 0.5);
+}
+
+.donor-section p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff1e1e;
+}
+
+/* 📱 RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+}

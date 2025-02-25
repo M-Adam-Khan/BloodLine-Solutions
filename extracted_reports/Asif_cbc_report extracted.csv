@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Asif
+Age,62.0
+Sex,Male
+Trestbps (Blood Pressure),140.0
+Chol (Cholesterol),260.0
+Fbs (Fasting Blood Sugar),0.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),150.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),2.0
+CP_1 (Chest Pain Type 1),1.0
+CP_2 (Chest Pain Type 2),0.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,0.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),15.5
+MCH (Mean Corpuscular Hemoglobin),40.0
+MCHC (Mean Corpuscular Hemoglobin Concentration),16.0
+RDW (Red Cell Distribution Width),None
+RBC Count,5.0
+Pregnancies,1.0
+Glucose,85.0
+Blood Pressure,66.0
+Skin Thickness,29.0
+Insulin,96.0
+BMI,26.6
+Diabetes Pedigree Function,0.351
+Hemoglobin,15.5
+MCH,40.0
+MCHC,16.0
+MCV (Mean Corpuscular Volume),86.5

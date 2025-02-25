@@ -1,0 +1,93 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Introduction to Patient Registration -->
+    <category>
+        <pattern>HOW CAN I REGISTER AS A PATIENT</pattern>
+        <template>
+            To register as a **patient**, simply fill out a form with the following details:  
+            🔹 **Name**  
+            🔹 **Gender**  
+            🔹 **Date of Birth**  
+            🔹 **Blood Group**  
+            🔹 **Mobile Number**  
+            🔹 **Email**  
+            🔹 **City**  
+            🔹 **Address**  
+            🔹 **Reason for Registration**  
+            🔹 **Emergency Contact**  
+            Once registered, you can start searching for donors in your city.
+        </template>
+    </category>
+
+    <!-- Required Patient Information -->
+    <category>
+        <pattern>WHAT INFORMATION IS REQUIRED FOR PATIENT REGISTRATION</pattern>
+        <template>
+            As a patient, you need to provide:  
+            📌 **Basic Info** (Name, Gender, DOB, Blood Group)  
+            📌 **Contact Details** (Mobile, Email, City, Address)  
+            📌 **Medical Info** (Reason for Registration, Emergency Contact)  
+            Once submitted, you can search for matching donors in your area.
+        </template>
+    </category>
+
+    <!-- Searching for Donors -->
+    <category>
+        <pattern>HOW CAN I SEARCH FOR DONORS</pattern>
+        <template>
+            If you're in urgent need of blood, you can directly search for donors.  
+            🔎 Enter your **Blood Group** and **City** in the search section.  
+            📍 The system will show a list of **available donors near you**.  
+            📞 You can contact them immediately for donation.
+        </template>
+    </category>
+
+    <!-- Urgent Blood Requirement -->
+    <category>
+        <pattern>I NEED BLOOD URGENTLY</pattern>
+        <template>
+            If you need blood urgently, follow these steps:  
+            1️⃣ Go to the **Search Donors** section.  
+            2️⃣ Enter your **Blood Group** and **City**.  
+            3️⃣ Get a list of **verified donors nearby**.  
+            4️⃣ Contact them directly for help.  
+            🆘 If you need emergency support, contact the nearest blood bank or hospital.
+        </template>
+    </category>
+
+    <!-- Blood Matching Process -->
+    <category>
+        <pattern>HOW DOES THE SYSTEM MATCH DONORS WITH PATIENTS</pattern>
+        <template>
+            Our system uses the following criteria to match donors with patients:  
+            ✅ **Same Blood Group Compatibility**  
+            ✅ **Donor's Availability**  
+            ✅ **Donor's Last Donation Date**  
+            ✅ **Patient's Location (City)**  
+            ✅ **Emergency Level**  
+            The system ensures you get the **most suitable donor as quickly as possible**.
+        </template>
+    </category>
+
+    <!-- Emergency Contact & Support -->
+    <category>
+        <pattern>WHAT IF I CAN'T FIND A DONOR</pattern>
+        <template>
+            If you cannot find a donor, try the following:  
+            🔹 Expand your **search area** to nearby cities.  
+            🔹 Contact local **blood banks or hospitals**.  
+            🔹 Post an **emergency request** on social media for more reach.  
+            🔹 Contact our **support team** for assistance.  
+            We will do our best to connect you with a suitable donor ASAP.
+        </template>
+    </category>
+
+    <!-- Thank You Message -->
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! 😊 Wishing you a **quick recovery** and hoping you find the right donor soon. If you need more help, just ask!
+        </template>
+    </category>
+
+</aiml>

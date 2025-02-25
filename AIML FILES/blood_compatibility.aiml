@@ -1,0 +1,55 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>DONATE TO O-</pattern>
+        <template>O- receives from O-</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO O+</pattern>
+        <template>O+ receives from O- and O+</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO A-</pattern>
+        <template>A- receives from O- and A-</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO A+</pattern>
+        <template>A+ receives from O-, O+, A-, and A+</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO B-</pattern>
+        <template>B- receives from O- and B-</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO B+</pattern>
+        <template>B+ receives from O-, O+, B-, and B+</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO AB-</pattern>
+        <template>AB- receives from O-, A-, B-, and AB-</template>
+    </category>
+
+    <category>
+        <pattern>DONATE TO AB+</pattern>
+        <template>AB+ receives from all blood groups</template>
+    </category>
+
+    <category>
+        <pattern>BLOOD COMPATIBILITY CHART</pattern>
+        <template>
+            O- donates to all blood types  
+            O+ donates to O+, A+, B+, AB+  
+            A- donates to A-, A+, AB-, AB+  
+            A+ donates to A+, AB+  
+            B- donates to B-, B+, AB-, AB+  
+            B+ donates to B+, AB+  
+            AB- donates to AB-, AB+  
+            AB+ donates only to AB+
+        </template>
+    </category>
+</aiml>

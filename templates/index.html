@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="static/images/logo_2.png" alt="Logo" class="logo">
+            <h1>BLOODLINE SOLUTIONS</h1>
+        </div>
+        <div class="typewriter">"Donate blood, save lives—be a hero today!" 🚑❤️</div>
+    </header>
+
+    <main class="categories">
+        <div class="category">
+            <h2>Patient</h2>
+            <p>Are you in need of blood? Click here to find help.</p>
+            <a href="{{ url_for('register_patient') }}" class="btn">Go to Patient</a>
+        </div>
+        <div class="category">
+            <h2>Donor</h2>
+            <p>Check your eligibility and contribute to saving lives.</p>
+            <a href="/donor" class="btn">Go to Donor</a>
+        </div>
+        <div class="category">
+            <h2>Find Your Donor</h2>
+            <p>Search for a suitable and eligible donor in your area.</p>
+            <a href="{{ url_for('dashboard') }}" class="btn">Find a Donor</a>
+        </div>
+    </main>
+
+    <!-- Chatbot Button -->
+    <button id="chat-with-us">💬 Chat with Us</button>
+
+    <!-- Chatbox UI (✅ Completely Hidden Initially) -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chatbot</span>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Background Blur Effect (✅ Initially Hidden) -->
+    <div class="blur-overlay"></div>
+
+    <footer>
+        <p>&copy; 2025 Bloodline Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

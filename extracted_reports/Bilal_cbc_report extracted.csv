@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Bilal
+Age,50.0
+Sex,Male
+Trestbps (Blood Pressure),135.0
+Chol (Cholesterol),250.0
+Fbs (Fasting Blood Sugar),1.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),148.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),1.2
+CP_1 (Chest Pain Type 1),1.0
+CP_2 (Chest Pain Type 2),0.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,0.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),11.5
+MCH (Mean Corpuscular Hemoglobin),26.5
+MCHC (Mean Corpuscular Hemoglobin Concentration),31.0
+RDW (Red Cell Distribution Width),14.0
+RBC Count,4.4
+Pregnancies,0.0
+Glucose,140.0
+Blood Pressure,80.0
+Skin Thickness,32.0
+Insulin,120.0
+BMI,28.5
+Diabetes Pedigree Function,0.62
+Hemoglobin,11.5
+MCH,26.5
+MCHC,31.0
+MCV (Mean Corpuscular Volume),82.0

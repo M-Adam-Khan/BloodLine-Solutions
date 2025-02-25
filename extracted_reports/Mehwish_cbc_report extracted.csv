@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Mehwish
+Age,53.0
+Sex,Female
+Trestbps (Blood Pressure),138.0
+Chol (Cholesterol),260.0
+Fbs (Fasting Blood Sugar),1.0
+Restecg (Resting Electrocardiographic Results),0.0
+Thalach (Max Heart Rate),140.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),1.7
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),1.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,0.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),12.2
+MCH (Mean Corpuscular Hemoglobin),26.0
+MCHC (Mean Corpuscular Hemoglobin Concentration),31.0
+RDW (Red Cell Distribution Width),14.8
+RBC Count,4.5
+Pregnancies,2.0
+Glucose,160.0
+Blood Pressure,87.0
+Skin Thickness,36.0
+Insulin,155.0
+BMI,30.8
+Diabetes Pedigree Function,0.71
+Hemoglobin,12.2
+MCH,26.0
+MCHC,31.0
+MCV (Mean Corpuscular Volume),80.5
