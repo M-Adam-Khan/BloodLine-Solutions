@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Bloodline Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/final_results.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Results</h1>
+        <p>Showing donors for blood group <strong>{{ blood_group }}</strong> in <strong>{{ city }}</strong></p>
+
+        {% if donors %}
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Last Donation Date</th>
+                </tr>
+                {% for donor in donors %}
+                <tr>
+                    <td>{{ donor.name }}</td>
+                    <td>{{ donor.age }}</td>
+                    <td>{{ donor.gender }}</td>
+                    <td>{{ donor.phone }}</td>
+                    <td>{{ donor.email }}</td>
+                    <td>{{ donor.last_donation_date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>No donors found for your search. Try another city or blood group.</p>
+        {% endif %}
+
+        <a href="{{ url_for('dashboard') }}" class="btn">Back to Search</a>
+    </div>
+</body>
+</html>

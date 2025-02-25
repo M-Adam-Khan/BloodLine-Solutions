@@ -1,0 +1,136 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    
+    <!-- Introduction to Donor Registration -->
+    <category>
+        <pattern>HOW CAN I REGISTER AS A DONOR</pattern>
+        <template>
+            To register as a blood donor, you need to go through three steps:  
+            1. Basic Check (Name, Age, Gender, Weight, Blood Group)  
+            2. Health Check (Answer Yes/No to some health-related questions)  
+            3. CBC Report Submission (Analyzed using ML and Rule-Based Models)  
+            After passing all these steps, you'll provide your City, Email, and Last Donation Date to complete the process.
+        </template>
+    </category>
+
+    <!-- Step 1: Basic Check -->
+    <category>
+        <pattern>WHAT IS THE BASIC CHECK FOR DONORS</pattern>
+        <template>
+            The Basic Check ensures that the donor meets the initial requirements.  
+            You will be asked to provide:  
+            - Name  
+            - Age (Must be between 18-65 years)  
+            - Gender  
+            - Weight (Must be at least 50 kg)  
+            - Blood Group  
+            If you meet these criteria, you proceed to the next step.
+        </template>
+    </category>
+
+    <!-- Step 2: Health Check -->
+    <category>
+        <pattern>WHAT HEALTH QUESTIONS WILL BE ASKED</pattern>
+        <template>
+            The Health Check involves Yes/No questions to determine your eligibility.  
+            Some questions include:  
+            - Do you have any infectious diseases?  
+            - Have you had any recent surgeries?  
+            - Are you currently taking any medications?  
+            - Have you donated blood in the last 3 months?  
+            Answer these carefully. If you pass, you move to the CBC Report Submission.
+        </template>
+    </category>
+
+    <!-- Step 3: CBC Report Submission -->
+    <category>
+        <pattern>WHAT IS THE CBC REPORT CHECK</pattern>
+        <template>
+            The CBC (Complete Blood Count) Report is required to analyze your health condition.  
+            Our system runs Machine Learning and Rule-Based Models on your report.  
+            It checks factors like Hemoglobin, WBC, Platelet count, etc.  
+            If the system approves, you move to the final step of registration.
+        </template>
+    </category>
+
+    <!-- Final Step: Completing Registration -->
+    <category>
+        <pattern>WHAT DETAILS ARE NEEDED TO COMPLETE DONOR REGISTRATION</pattern>
+        <template>
+            After passing all checks, you need to provide:  
+            - Your City (To match with patients nearby)  
+            - Your Email (For notifications and patient contact)  
+            - Your Last Donation Date (To check eligibility)  
+            Once completed, you will be added as a Verified Donor in the system.
+        </template>
+    </category>
+
+    <!-- Donor Eligibility -->
+    <category>
+        <pattern>WHO CAN BECOME A BLOOD DONOR</pattern>
+        <template>
+            You can donate blood if:  
+            - You are 18-65 years old  
+            - Your weight is 50 kg or more  
+            - You have no serious medical conditions  
+            - Your CBC report is normal  
+            - You haven’t donated blood in the last 3 months (for males) or 4 months (for females)  
+            If you meet these criteria, you can register as a donor.
+        </template>
+    </category>
+
+    <!-- Donation Frequency -->
+    <category>
+        <pattern>HOW OFTEN CAN I DONATE BLOOD</pattern>
+        <template>
+            The frequency of blood donation depends on your gender:  
+            - Males: Every 3 months  
+            - Females: Every 4 months  
+            This ensures you stay healthy while helping others.
+        </template>
+    </category>
+
+    <!-- Donor Benefits -->
+    <category>
+        <pattern>WHAT ARE THE BENEFITS OF DONATING BLOOD</pattern>
+        <template>
+            Donating blood has several benefits:  
+            - Saves Lives – Your donation can help patients in emergencies.  
+            - Improves Heart Health – Reduces risk of heart diseases.  
+            - Boosts Blood Production – Encourages new blood cell formation.  
+            - Free Health Check – You get a mini health screening with each donation.  
+            It's a simple act that makes a big difference.
+        </template>
+    </category>
+
+    <!-- Common Questions -->
+    <category>
+        <pattern>DOES BLOOD DONATION HAVE SIDE EFFECTS</pattern>
+        <template>
+            Blood donation is safe for healthy individuals.  
+            - Some may feel mild dizziness, which goes away quickly.  
+            - Staying hydrated and eating a good meal helps prevent any issues.  
+            If you have any medical conditions, consult a doctor before donating.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT SHOULD I DO AFTER DONATING BLOOD</pattern>
+        <template>
+            After donating blood:  
+            - Drink plenty of fluids.  
+            - Eat an iron-rich meal.  
+            - Avoid heavy exercise for the next 24 hours.  
+            - Rest if you feel dizzy.  
+            Taking these steps ensures a smooth recovery.
+        </template>
+    </category>
+
+    <!-- Gratitude -->
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! Thank you for supporting blood donation. If you have more questions, feel free to ask.
+        </template>
+    </category>
+
+</aiml>

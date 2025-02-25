@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Blood Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload_report.css') }}">
+</head>
+<body>
+    <!-- Main Section -->
+    <div class="form-container">
+        <h1>Blood Test Reports</h1>
+        
+        <p class="instruction">Please upload your CBC report (PDF/JPG):</p>
+
+        {% if result %}
+            <div class="result">
+                <p>{{ result }}</p>
+            </div>
+        {% endif %}
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" id="blood_report" name="blood_report" accept=".pdf, .jpg, .jpeg" required>
+            <button type="submit">Upload Report</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Omar
+Age,68.0
+Sex,Male
+Trestbps (Blood Pressure),175.0
+Chol (Cholesterol),330.0
+Fbs (Fasting Blood Sugar),1.0
+Restecg (Resting Electrocardiographic Results),0.0
+Thalach (Max Heart Rate),115.0
+Exang (Exercise Induced Angina),1.0
+Oldpeak (Depression Induced by Exercise),4.5
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),1.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,0.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),0.0
+Slope_2,1.0
+Hemoglobin (Hb),7.5
+MCH (Mean Corpuscular Hemoglobin),20.0
+MCHC (Mean Corpuscular Hemoglobin Concentration),25.5
+RDW (Red Cell Distribution Width),18.2
+RBC Count,2.8
+Pregnancies,0.0
+Glucose,240.0
+Blood Pressure,120.0
+Skin Thickness,55.0
+Insulin,350.0
+BMI,39.8
+Diabetes Pedigree Function,1.4
+Hemoglobin,7.5
+MCH,20.0
+MCHC,25.5
+MCV (Mean Corpuscular Volume),70.5

@@ -1,0 +1,114 @@
+/* 🚀 GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 🌌 BODY BACKGROUND - BLOOD-INSPIRED THEME */
+body {
+    background: radial-gradient(circle at top, #250000, #000000);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* 🎬 PAGE SLIDE-UP EFFECT */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📌 CONTAINER STYLING */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.5);
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* 🔴 SUCCESS MESSAGE */
+h1 {
+    font-size: 2rem;
+    color: #ff6363;
+    text-shadow: 0 0 20px rgba(255, 99, 99, 0.8);
+    margin-bottom: 20px;
+}
+
+/* 📜 PATIENT DETAILS LIST */
+ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul li strong {
+    color: #ff4747;
+}
+
+/* 🔘 BUTTON STYLING */
+button {
+    background: linear-gradient(45deg, #ff3c3c, #b80000);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6363, #d62828);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.7);
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

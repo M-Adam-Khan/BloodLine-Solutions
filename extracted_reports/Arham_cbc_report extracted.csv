@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Arham
+Age,52.0
+Sex,Male
+Trestbps (Blood Pressure),140.0
+Chol (Cholesterol),255.0
+Fbs (Fasting Blood Sugar),1.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),145.0
+Exang (Exercise Induced Angina),1.0
+Oldpeak (Depression Induced by Exercise),2.0
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),1.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,0.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),10.8
+MCH (Mean Corpuscular Hemoglobin),25.0
+MCHC (Mean Corpuscular Hemoglobin Concentration),30.5
+RDW (Red Cell Distribution Width),15.0
+RBC Count,4.2
+Pregnancies,0.0
+Glucose,135.0
+Blood Pressure,85.0
+Skin Thickness,30.0
+Insulin,110.0
+BMI,29.8
+Diabetes Pedigree Function,0.64
+Hemoglobin,10.8
+MCH,25.0
+MCHC,30.5
+MCV (Mean Corpuscular Volume),81.0

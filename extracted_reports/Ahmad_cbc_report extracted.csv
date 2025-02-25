@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Ahmad
+Age,55.0
+Sex,Male
+Trestbps (Blood Pressure),132.0
+Chol (Cholesterol),245.0
+Fbs (Fasting Blood Sugar),0.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),162.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),1.3
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),1.0
+CP_3 (Chest Pain Type 3),0.0
+Thal_2,1.0
+Thal_3,1.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),14.0
+MCH (Mean Corpuscular Hemoglobin),37.5
+MCHC (Mean Corpuscular Hemoglobin Concentration),17.8
+RDW (Red Cell Distribution Width),13.3
+RBC Count,4.7
+Pregnancies,0.0
+Glucose,92.0
+Blood Pressure,74.0
+Skin Thickness,26.0
+Insulin,85.0
+BMI,25.5
+Diabetes Pedigree Function,0.295
+Hemoglobin,14.0
+MCH,37.5
+MCHC,17.8
+MCV (Mean Corpuscular Volume),86.0

@@ -1,0 +1,50 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>WHAT IS THIS APPLICATION ABOUT</pattern>
+        <template>
+            This application is designed to connect blood donors with patients in need. Donors can register themselves, and patients can search for potential donors based on blood group and city.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS BLOODLINE SOLUTIONS</pattern>
+        <template>
+            This application is designed to connect blood donors with patients in need. Donors can register themselves, and patients can search for potential donors based on blood group and city.
+        </template>
+    </category>
+    
+
+    <category>
+        <pattern>HOW CAN I REGISTER</pattern>
+        <template>
+            You can register as a donor or patient by signing up on the app. Fill in your details, including name, blood group, and city, to start using the service.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I FIND A DONOR</pattern>
+        <template>
+            Patients can search for donors by selecting their required blood group and city. The system will list available donors nearby.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I CONTACT A DONOR</pattern>
+        <template>
+            Once you find a suitable donor, you can view their contact details (if they have made them public) and reach out to them for assistance.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO CAN DONATE BLOOD</pattern>
+        <template>
+            Generally, healthy individuals between 18-65 years of age, weighing at least 50 kg, and free from infectious diseases can donate blood. However, eligibility depends on medical guidelines.
+        </template>
+    </category>
+
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! I'm here to help.
+        </template>
+    </category>
+</aiml>

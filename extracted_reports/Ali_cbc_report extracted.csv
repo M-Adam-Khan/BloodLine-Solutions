@@ -1,0 +1,35 @@
+Parameter,Value
+Name,Ali
+Age,30.0
+Sex,Male
+Trestbps (Blood Pressure),120.0
+Chol (Cholesterol),180.0
+Fbs (Fasting Blood Sugar),0.0
+Restecg (Resting Electrocardiographic Results),1.0
+Thalach (Max Heart Rate),170.0
+Exang (Exercise Induced Angina),0.0
+Oldpeak (Depression Induced by Exercise),0.5
+CP_1 (Chest Pain Type 1),0.0
+CP_2 (Chest Pain Type 2),0.0
+CP_3 (Chest Pain Type 3),1.0
+Thal_2,1.0
+Thal_3,0.0
+Thal_4,0.0
+Slope_1 (Slope of Peak Exercise ST Segment),1.0
+Slope_2,0.0
+Hemoglobin (Hb),15.0
+MCH (Mean Corpuscular Hemoglobin),29.5
+MCHC (Mean Corpuscular Hemoglobin Concentration),33.5
+RDW (Red Cell Distribution Width),12.5
+RBC Count,5.2
+Pregnancies,0.0
+Glucose,95.0
+Blood Pressure,75.0
+Skin Thickness,25.0
+Insulin,90.0
+BMI,24.5
+Diabetes Pedigree Function,0.4
+Hemoglobin,15.0
+MCH,29.5
+MCHC,33.5
+MCV (Mean Corpuscular Volume),87.0

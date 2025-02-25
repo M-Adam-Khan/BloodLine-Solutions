@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/patient_details.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Registered Successfully!</h1>
+
+        <!-- Display patient data -->
+        <ul>
+            <li><strong>Name:</strong> {{ patient_data['name'] }}</li>
+            <li><strong>Gender:</strong> {{ patient_data['gender'] }}</li>
+            <li><strong>Date of Birth:</strong> {{ patient_data['dob'] }}</li>
+            <li><strong>Blood Group:</strong> {{ patient_data['blood_group'] }}</li>
+            <li><strong>Mobile:</strong> {{ patient_data['mobile'] }}</li>
+            <li><strong>Email:</strong> {{ patient_data['email'] }}</li>
+            <li><strong>City:</strong> {{ patient_data['city'] }}</li>
+            <li><strong>Address:</strong> {{ patient_data['address'] }}</li>
+            <li><strong>Reason for Registration:</strong> {{ patient_data['reason'] }}</li>
+            <li><strong>Emergency Contact:</strong> {{ patient_data['emergency_contact'] }}</li>
+        </ul>
+
+        <!-- Button to go to the home page -->
+        <a href="{{ url_for('dashboard') }}">
+            <button>Search for Donors</button>
+        </a>
+    </div>
+</body>
+</html>

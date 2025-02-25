@@ -1,0 +1,155 @@
+/* 🚀 GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 🌌 BODY BACKGROUND - BLOOD-INSPIRED THEME */
+body {
+    background: radial-gradient(circle at top, #250000, #000000);
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* 🏢 MAIN CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* 🎨 IMAGE SECTION */
+.image-section {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.image-section img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* 📜 FORM CONTAINER */
+.form-container {
+    flex: 1;
+    max-width: 40%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(255, 0, 0, 0.4);
+    animation: slideUp 1.8s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* 🔥 STAGGERED FADE-IN */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🩸 FORM STYLING */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6363;
+    text-shadow: 0 0 15px rgba(255, 99, 99, 0.8);
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 span {
+    color: #ff0000;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #dddddd;
+    margin: 10px 0;
+}
+
+/* 🔘 FORM INPUTS */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #e63946;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+input:focus, select:focus {
+    border-color: #ff3c3c;
+    background-color: #2d2d2d;
+}
+
+/* 🔴 BUTTON STYLES */
+button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff3c3c, #b80000);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6363, #d62828);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.7);
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-section, .form-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
